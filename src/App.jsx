@@ -33,7 +33,7 @@ function App() {
     <Counter initialValue={0} number={1}/>
     <Counter initialValue={2} number={2}/>
     <Counter initialValue={3} number={3}/>
-    <Greeting/>
+    <Greeting name="Euralio" nameChanged="Alfonsina"/>
     </>
   )
 };

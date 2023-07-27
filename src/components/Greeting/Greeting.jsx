@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
- const Greeting = () => {
-    const [nombre, setNombre] = useState('Euralio');
+ const Greeting = (props) => {
+    const [nombre, setNombre] = useState(props.name);
     useEffect(()=>{
         setTimeout(()=>{
-            setNombre("Alfonsina");
+            setNombre(props.nameChanged);
         },3000)
     })
   return (
