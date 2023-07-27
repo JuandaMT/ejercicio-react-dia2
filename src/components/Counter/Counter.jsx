@@ -2,7 +2,7 @@ import "./Counter.css";
 import { useState } from "react";
 
 const Counter = (props) => {
-  const [counter, setCounter] = useState(props.initialValue, props.number);
+  const [counter, setCounter] = useState(props.initialValue);
 
   const increment = () => {
     setCounter(counter + props.number);
